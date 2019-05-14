@@ -38,9 +38,9 @@
             this.label1.Location = new System.Drawing.Point(283, 372);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 31);
+            this.label1.Size = new System.Drawing.Size(165, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Title Screen";
+            this.label1.Text = "Meme Battle";
             // 
             // frm_title
             // 
