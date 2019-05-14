@@ -73,6 +73,16 @@ namespace FormsAdventure2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap memes_for_work {
+            get {
+                object obj = ResourceManager.GetObject("memes for work", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap title_anim {
             get {
                 object obj = ResourceManager.GetObject("title_anim", resourceCulture);
