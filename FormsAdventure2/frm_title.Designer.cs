@@ -29,41 +29,31 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pbx_title = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_title)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(423, 609);
+            this.label1.Location = new System.Drawing.Point(283, 372);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 46);
+            this.label1.Size = new System.Drawing.Size(159, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Title Screen";
             // 
-            // pbx_title
-            // 
-            this.pbx_title.Image = global::FormsAdventure2.Properties.Resources.title_anim2;
-            this.pbx_title.Location = new System.Drawing.Point(130, 12);
-            this.pbx_title.Name = "pbx_title";
-            this.pbx_title.Size = new System.Drawing.Size(785, 146);
-            this.pbx_title.TabIndex = 1;
-            this.pbx_title.TabStop = false;
-            // 
             // frm_title
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FormsAdventure2.Properties.Resources.dragon1;
+            this.BackgroundImage = global::FormsAdventure2.Properties.Resources.memes_for_work;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1071, 694);
-            this.Controls.Add(this.pbx_title);
+            this.ClientSize = new System.Drawing.Size(714, 451);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_title";
             this.Text = "frm_title";
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_title)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,6 +62,5 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbx_title;
     }
 }
