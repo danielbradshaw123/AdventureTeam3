@@ -73,6 +73,16 @@ namespace FormsAdventure2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap horizon {
+            get {
+                object obj = ResourceManager.GetObject("horizon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap memes_for_work {
             get {
                 object obj = ResourceManager.GetObject("memes for work", resourceCulture);
@@ -96,6 +106,26 @@ namespace FormsAdventure2.Properties {
         internal static System.Drawing.Bitmap title_anim2 {
             get {
                 object obj = ResourceManager.GetObject("title_anim2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap winston {
+            get {
+                object obj = ResourceManager.GetObject("winston", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap winston_shadow {
+            get {
+                object obj = ResourceManager.GetObject("winston shadow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

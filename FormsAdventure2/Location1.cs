@@ -21,5 +21,15 @@ namespace FormsAdventure2
         {
             GameController.ShowSubform(new Location2());
         }
+
+        private void storyBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Location1_Click(object sender, EventArgs e)
+        {
+            storyBox.Text = "new text";
+        }
     }
 }

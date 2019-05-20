@@ -38,9 +38,8 @@
             this.label1.Location = new System.Drawing.Point(283, 372);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 31);
+            this.label1.Size = new System.Drawing.Size(0, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Meme Battle";
             // 
             // frm_title
             // 
@@ -48,12 +47,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FormsAdventure2.Properties.Resources.memes_for_work;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(714, 451);
+            this.ClientSize = new System.Drawing.Size(714, 487);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_title";
             this.Text = "frm_title";
+            this.Load += new System.EventHandler(this.frm_title_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
