@@ -16,5 +16,10 @@ namespace FormsAdventure2
         {
             InitializeComponent();
         }
+
+        private void frm_title_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
