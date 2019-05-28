@@ -31,5 +31,20 @@ namespace FormsAdventure2
         {
             storyBox.Text = "new text";
         }
+
+        private void characterName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void character_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Location1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,5 +33,10 @@ namespace FormsAdventure2
         {
 
         }
+
+        private void pnl_main_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace FormsAdventure2
 
             // create the game character and update character panel on main form
             player = new Character();
-            UpdatePnlCharacter();
+            //UpdatePnlCharacter();
 
             // display first location in panel on main form
             ShowSubform(new Location1());

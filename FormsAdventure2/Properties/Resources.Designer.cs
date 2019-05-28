@@ -93,6 +93,16 @@ namespace FormsAdventure2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Overwatch_moon_map {
+            get {
+                object obj = ResourceManager.GetObject("Overwatch-moon-map", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap title_anim {
             get {
                 object obj = ResourceManager.GetObject("title_anim", resourceCulture);
@@ -106,6 +116,16 @@ namespace FormsAdventure2.Properties {
         internal static System.Drawing.Bitmap title_anim2 {
             get {
                 object obj = ResourceManager.GetObject("title_anim2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap title_images {
+            get {
+                object obj = ResourceManager.GetObject("title images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
