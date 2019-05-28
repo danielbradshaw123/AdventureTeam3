@@ -131,5 +131,11 @@
   <ItemGroup>
     <None Include="Resources\winston shadow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overwatch-moon-map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title images.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

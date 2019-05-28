@@ -50,48 +50,54 @@
             // 
             // storyBox
             // 
-            this.storyBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.storyBox.Location = new System.Drawing.Point(13, 338);
+            this.storyBox.Font = new System.Drawing.Font("Segoe UI", 26.75F);
+            this.storyBox.Location = new System.Drawing.Point(12, 456);
             this.storyBox.Name = "storyBox";
-            this.storyBox.Size = new System.Drawing.Size(888, 162);
+            this.storyBox.ReadOnly = true;
+            this.storyBox.Size = new System.Drawing.Size(996, 213);
             this.storyBox.TabIndex = 2;
             this.storyBox.Text = " Hmm. Is this on?";
             this.storyBox.TextChanged += new System.EventHandler(this.storyBox_TextChanged);
             // 
             // characterName
             // 
-            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.characterName.Location = new System.Drawing.Point(12, 283);
+            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterName.Location = new System.Drawing.Point(12, 401);
             this.characterName.Name = "characterName";
+            this.characterName.ReadOnly = true;
             this.characterName.Size = new System.Drawing.Size(278, 49);
             this.characterName.TabIndex = 3;
             this.characterName.Text = "   ???";
+            this.characterName.TextChanged += new System.EventHandler(this.characterName_TextChanged);
             // 
             // character
             // 
             this.character.BackColor = System.Drawing.Color.Transparent;
             this.character.Image = global::FormsAdventure2.Properties.Resources.winston_shadow;
-            this.character.Location = new System.Drawing.Point(78, 11);
+            this.character.Location = new System.Drawing.Point(268, 45);
             this.character.Name = "character";
             this.character.Size = new System.Drawing.Size(858, 873);
             this.character.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.character.TabIndex = 4;
             this.character.TabStop = false;
+            this.character.Click += new System.EventHandler(this.character_Click);
             // 
             // Location1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BackgroundImage = global::FormsAdventure2.Properties.Resources.horizon;
-            this.ClientSize = new System.Drawing.Size(913, 512);
+            this.BackgroundImage = global::FormsAdventure2.Properties.Resources.Overwatch_moon_map;
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.storyBox);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.character);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Location1";
             this.Text = "Location1";
+            this.Load += new System.EventHandler(this.Location1_Load);
             this.Click += new System.EventHandler(this.Location1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             this.ResumeLayout(false);
