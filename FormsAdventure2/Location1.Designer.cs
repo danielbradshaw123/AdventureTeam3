@@ -31,8 +31,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.storyBox = new System.Windows.Forms.RichTextBox();
             this.characterName = new System.Windows.Forms.RichTextBox();
-            this.character = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.character)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -70,18 +68,6 @@
             this.characterName.Text = "   ???";
             this.characterName.TextChanged += new System.EventHandler(this.characterName_TextChanged);
             // 
-            // character
-            // 
-            this.character.BackColor = System.Drawing.Color.Transparent;
-            this.character.Image = global::FormsAdventure2.Properties.Resources.winston_shadow;
-            this.character.Location = new System.Drawing.Point(268, 45);
-            this.character.Name = "character";
-            this.character.Size = new System.Drawing.Size(858, 873);
-            this.character.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.character.TabIndex = 4;
-            this.character.TabStop = false;
-            this.character.Click += new System.EventHandler(this.character_Click);
-            // 
             // Location1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,16 +78,13 @@
             this.Controls.Add(this.storyBox);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.character);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Location1";
             this.Text = "Location1";
             this.Load += new System.EventHandler(this.Location1_Load);
             this.Click += new System.EventHandler(this.Location1_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -109,6 +92,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox storyBox;
         private System.Windows.Forms.RichTextBox characterName;
-        private System.Windows.Forms.PictureBox character;
     }
 }
