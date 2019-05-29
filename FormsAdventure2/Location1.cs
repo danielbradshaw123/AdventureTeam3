@@ -29,7 +29,8 @@ namespace FormsAdventure2
 
         private void Location1_Click(object sender, EventArgs e)
         {
-            storyBox.Text = "new text";
+            MessageBox.Show("test");
+            storyBox.Text = "testing 123";
         }
 
         private void characterName_TextChanged(object sender, EventArgs e)
