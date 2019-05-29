@@ -32,7 +32,6 @@
             this.storyBox = new System.Windows.Forms.RichTextBox();
             this.characterName = new System.Windows.Forms.RichTextBox();
             this.character = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.character)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,23 +82,12 @@
             this.character.TabStop = false;
             this.character.Click += new System.EventHandler(this.character_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(145, 88);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 37);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // Location1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BackgroundImage = global::FormsAdventure2.Properties.Resources.Overwatch_moon_map;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.storyBox);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.button1);
@@ -121,6 +109,5 @@
         private System.Windows.Forms.RichTextBox storyBox;
         private System.Windows.Forms.RichTextBox characterName;
         private System.Windows.Forms.PictureBox character;
-        private System.Windows.Forms.Button button2;
     }
 }
