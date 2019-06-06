@@ -1,6 +1,6 @@
 ﻿namespace FormsAdventure2
 {
-    partial class Location1
+    partial class Location5
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.storyBox = new System.Windows.Forms.RichTextBox();
             this.characterName = new System.Windows.Forms.RichTextBox();
-            this.character = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.character)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -49,60 +47,40 @@
             // 
             // storyBox
             // 
-            this.storyBox.Font = new System.Drawing.Font("Segoe UI", 26.75F);
-            this.storyBox.Location = new System.Drawing.Point(18, 702);
+            this.storyBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.storyBox.Location = new System.Drawing.Point(13, 506);
             this.storyBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.storyBox.Name = "storyBox";
-            this.storyBox.ReadOnly = true;
-            this.storyBox.Size = new System.Drawing.Size(1492, 326);
+            this.storyBox.Size = new System.Drawing.Size(1330, 247);
             this.storyBox.TabIndex = 2;
-            this.storyBox.Text = " Hmm. Is this on?";
+            this.storyBox.Text = "Ima goina get ya";
             this.storyBox.TextChanged += new System.EventHandler(this.storyBox_TextChanged);
             // 
             // characterName
             // 
-            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterName.Location = new System.Drawing.Point(18, 617);
+            this.characterName.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.characterName.Location = new System.Drawing.Point(18, 435);
             this.characterName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.characterName.Name = "characterName";
-            this.characterName.ReadOnly = true;
             this.characterName.Size = new System.Drawing.Size(415, 73);
             this.characterName.TabIndex = 3;
-            this.characterName.Text = "   ???";
-            this.characterName.TextChanged += new System.EventHandler(this.characterName_TextChanged);
+            this.characterName.Text = "That one Gummy bear";
             // 
-            // character
-            // 
-            this.character.BackColor = System.Drawing.Color.Transparent;
-            this.character.Image = global::FormsAdventure2.Properties.Resources.winston_shadow;
-            this.character.Location = new System.Drawing.Point(402, 69);
-            this.character.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.character.Name = "character";
-            this.character.Size = new System.Drawing.Size(858, 873);
-            this.character.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.character.TabIndex = 4;
-            this.character.TabStop = false;
-            this.character.Click += new System.EventHandler(this.character_Click);
-            // 
-            // Location1
+            // Location5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BackgroundImage = global::FormsAdventure2.Properties.Resources.Overwatch_moon_map;
-            this.ClientSize = new System.Drawing.Size(1896, 1048);
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::FormsAdventure2.Properties.Resources.download__9_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1370, 788);
             this.Controls.Add(this.storyBox);
             this.Controls.Add(this.characterName);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.character);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Location1";
-            this.Text = "Location1";
-            this.Load += new System.EventHandler(this.Location1_Load);
+            this.Name = "Location5";
+            this.Text = "LocationTemplate2";
             this.Click += new System.EventHandler(this.Location1_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -110,6 +88,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox storyBox;
         private System.Windows.Forms.RichTextBox characterName;
-        private System.Windows.Forms.PictureBox character;
     }
 }

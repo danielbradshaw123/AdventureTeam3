@@ -73,6 +73,30 @@
     <Compile Include="Location2.Designer.cs">
       <DependentUpon>Location2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Location3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location3.Designer.cs">
+      <DependentUpon>Location3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location4.Designer.cs">
+      <DependentUpon>Location4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location5.Designer.cs">
+      <DependentUpon>Location5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location6.Designer.cs">
+      <DependentUpon>Location6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_main.resx">
@@ -86,6 +110,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Location2.resx">
       <DependentUpon>Location2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location3.resx">
+      <DependentUpon>Location3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location4.resx">
+      <DependentUpon>Location4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location5.resx">
+      <DependentUpon>Location5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location6.resx">
+      <DependentUpon>Location6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,6 +172,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\title images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AndrewDivoffImage4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AndrewDivoffImage41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
