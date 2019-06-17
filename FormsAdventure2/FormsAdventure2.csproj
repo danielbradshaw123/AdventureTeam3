@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="FormBattleArena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBattleArena.Designer.cs">
+      <DependentUpon>FormBattleArena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCharacterCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCharacterCreator.Designer.cs">
+      <DependentUpon>FormCharacterCreator.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,19 @@
       <DependentUpon>frm_title.cs</DependentUpon>
     </Compile>
     <Compile Include="GameController.cs" />
+    <Compile Include="game_over.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game_over.Designer.cs">
+      <DependentUpon>game_over.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Heroes\Tracer.cs" />
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item.cs" />
     <Compile Include="Location1.cs">
       <SubType>Form</SubType>
@@ -75,11 +100,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="well done.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="well done.Designer.cs">
+      <DependentUpon>well done.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormBattleArena.resx">
+      <DependentUpon>FormBattleArena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCharacterCreator.resx">
+      <DependentUpon>FormCharacterCreator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_main.resx">
       <DependentUpon>frm_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_title.resx">
       <DependentUpon>frm_title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="game_over.resx">
+      <DependentUpon>game_over.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Location1.resx">
       <DependentUpon>Location1.cs</DependentUpon>
@@ -89,18 +132,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="well done.resx">
+      <DependentUpon>well done.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -109,18 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dragon1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\title_anim2.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\title_anim.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\memes for work.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\horizon.png" />
@@ -135,7 +169,88 @@
     <None Include="Resources\Overwatch-moon-map.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\title images.png" />
+    <None Include="Resources\next.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated character.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kings Row Arena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tracer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widowmaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startmenutheme.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start menu theme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fight music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pulse.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tracer_melee.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tracer_blink.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tracer_bomb.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widow_shot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widow_smg.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widow_melee.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\death.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\widow_hello.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumbs_up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad_face.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokewatch small logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biotic_grenade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

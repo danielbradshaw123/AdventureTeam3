@@ -32,7 +32,6 @@ namespace FormsAdventure2
 
             // display first location in panel on main form
             ShowSubform(new Location1());
-
         }
 
 
@@ -49,24 +48,5 @@ namespace FormsAdventure2
 
 
         // used to update the character panel after any changes to character stats
-        private static void UpdatePnlCharacter()
-        {
-            Label foundlabel;
-            foundlabel = (Label)main.Controls.Find("lbl_name",true).First();
-            if (foundlabel != null)
-                foundlabel.Text = "Name: " + player.name;
-
-            foundlabel = (Label)main.Controls.Find("lbl_luck", true).First();
-            if (foundlabel != null)
-                foundlabel.Text = "Luck: " + player.luck;
-
-            foundlabel = (Label)main.Controls.Find("lbl_gold", true).First();
-            if (foundlabel != null)
-                foundlabel.Text = "Gold: " + player.gold;
-
-            foundlabel = (Label)main.Controls.Find("lbl_score", true).First();
-            if (foundlabel != null)
-                foundlabel.Text = "Score: " + player.score;
-        }
     }
 }

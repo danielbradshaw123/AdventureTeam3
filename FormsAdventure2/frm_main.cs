@@ -12,8 +12,11 @@ namespace FormsAdventure2
 {
     public partial class frm_main : Form
     {
+        static frm_main _instance;
+
         public frm_main()
         {
+            _instance = this;
             InitializeComponent();
         }
 
@@ -38,5 +41,50 @@ namespace FormsAdventure2
         {
 
         }
+
+        private void richTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Name_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        public static void nameUpdate()
+        {
+            _instance.txt_NameBox.Text = "Name: " + FormCharacterCreator.CharacterName;
+        }
+
+        public static bool Male;
+
+        public static void genderUpdate()
+        {
+            if (Male == true)
+                _instance.txt_Gender.Text = "Gender: Male";
+
+            else
+                _instance.txt_Gender.Text = "Gender: Female";
+        }
+
+        public static int Score = 0;
+
+        public static void scoreUpdate()
+        {
+            _instance.txt_Score.Text = "Score: " + Score.ToString();
+        }
+
+        public static string PokeName;
+        public static string EnemyName;
+
+        public static void heroUpdate()
+        {
+            _instance.txt_currentHero.Text = "Hero: " + PokeName;
+        }
+ 
+
+
     }
 }
