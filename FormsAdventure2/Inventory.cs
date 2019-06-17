@@ -12,9 +12,13 @@ namespace FormsAdventure2
 {
     public partial class Inventory : Form
     {
+        static Inventory _instance;
+
         public Inventory()
         {
+            _instance = this;
             InitializeComponent();
+
         }
 
         public static Inventory Instance2 { get; private set; }
@@ -53,6 +57,7 @@ namespace FormsAdventure2
         private void Btn_closeInventory_Click(object sender, EventArgs e)
         {
             Close();
+            FormBattleArena.ShowInventoryButton();
         }
 
         private void Inventory_Load(object sender, EventArgs e)

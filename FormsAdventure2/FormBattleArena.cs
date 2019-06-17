@@ -15,10 +15,13 @@ namespace FormsAdventure2
 {
     public partial class FormBattleArena : Form
     {
+        static FormBattleArena _instance;
+
         public FormBattleArena()
         {
             InitializeComponent();
             Instance = this;
+            _instance = this;
 
             frm_main.heroUpdate();
             CharacterNames();
@@ -480,9 +483,16 @@ Moves Remaining: " + Move4_amount + " / 2";
 
         public static int Empty = 0;
 
+        public static void ShowInventoryButton()
+        {
+            _instance.Btn_Inventory.Show();
+        }
+
 
         private void Btn_Inventory_Click(object sender, EventArgs e)
         {
+            Btn_Inventory.Hide();
+
             if (Empty == 0)
             {
                 Inventory.firstTime = true;
