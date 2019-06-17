@@ -99,6 +99,7 @@
             this.txt_Score.Size = new System.Drawing.Size(142, 36);
             this.txt_Score.TabIndex = 4;
             this.txt_Score.Text = "Score:";
+            this.txt_Score.TextChanged += new System.EventHandler(this.txt_Score_TextChanged);
             // 
             // txt_Credits
             // 

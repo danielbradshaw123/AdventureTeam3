@@ -83,8 +83,10 @@ namespace FormsAdventure2
         {
             _instance.txt_currentHero.Text = "Hero: " + PokeName;
         }
- 
 
+        private void txt_Score_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

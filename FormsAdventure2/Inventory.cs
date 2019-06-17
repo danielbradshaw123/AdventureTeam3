@@ -31,6 +31,8 @@ namespace FormsAdventure2
 
         private void lbl_BioticGrenade_Click(object sender, EventArgs e)
         {
+            FormBattleArena.Empty = 1;
+
             lbl_BioticAmount.Hide();
             lbl_BioticDesc.Hide();
             lbl_BioticGrenade.Hide();

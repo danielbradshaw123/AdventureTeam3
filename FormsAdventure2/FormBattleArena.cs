@@ -478,13 +478,12 @@ Moves Remaining: " + Move4_amount + " / 2";
             }
         }
 
-        public static int clicks = 0;
+        public static int Empty = 0;
+
 
         private void Btn_Inventory_Click(object sender, EventArgs e)
         {
-            clicks++;
-
-            if (clicks == 1)
+            if (Empty == 0)
             {
                 Inventory.firstTime = true;
                 Inventory inventory = new Inventory();
