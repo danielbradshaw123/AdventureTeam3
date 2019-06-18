@@ -57,7 +57,6 @@ namespace FormsAdventure2
         private void Btn_closeInventory_Click(object sender, EventArgs e)
         {
             Close();
-            FormBattleArena.ShowInventoryButton();
         }
 
         private void Inventory_Load(object sender, EventArgs e)
