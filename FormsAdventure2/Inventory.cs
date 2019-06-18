@@ -79,5 +79,10 @@ namespace FormsAdventure2
                 lbl_itemless.Show();
             }
         }
+
+        private void Inventory_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormBattleArena.ShowInventoryButton();
+        }
     }
 }

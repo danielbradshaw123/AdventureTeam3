@@ -181,6 +181,7 @@ namespace FormsAdventure2
         private void Move1_Click(object sender, EventArgs e)
         {
             HideActions();
+
             int i = 25;
             storyBox.Text = frm_main.PokeName + " used " + Move1 + ", dealing " + i + " damage!";
             Application.DoEvents();
